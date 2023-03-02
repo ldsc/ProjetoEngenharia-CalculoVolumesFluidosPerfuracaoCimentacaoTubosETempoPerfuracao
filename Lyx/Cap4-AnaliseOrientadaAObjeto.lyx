@@ -1,0 +1,632 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+AOO
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+AOO
+\end_layout
+
+\end_inset
+
+ -- Análise Orientada a Objeto
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Análise orientada a objeto
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:AOO"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Análise Orientada a Objeto} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagramas de classes
+\end_layout
+
+\begin_layout Standard
+O diagrama de classes é apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-classes."
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Diagrama_de_Classes.jpg
+	lyxscale 85
+	scale 85
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de classes.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-classes."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de classes.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Lucas/Desktop/Lucas/Lenep/C++/Projeto/Projeto/Imagens/Diagrama_Classes.bmp
+	lyxscale 60
+	scale 60
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Dicionário de classes
+\end_layout
+
+\begin_layout Itemize
+Classe COperacao: é a classe que gerencia as outras e troca informações
+ com o usuário.
+\end_layout
+
+\begin_layout Itemize
+Classe CPoco: esta classe é responsável pelo armazenamento de todos os atributos
+ do poço, como profundidade das sapatas dos revestimentos, as capacidades,
+ número de juntas necessárias para cada fase, e seus respectivos diâmetros.
+ Ela possui os métodos Set para a profundidade e Get para todos os atributos.
+ A classe possui também os métodos para realizar os cálculos de volume de
+ fluido de perfuração e de cimento e o número de juntas utilizadas.
+\end_layout
+
+\begin_layout Itemize
+Classe CPerfuracao: é a classe responsável pelos cálculos referentes ao
+ tempo na etapa de perfuração do poço.
+\end_layout
+
+\begin_layout Itemize
+Classe CRevestimento: esta classe possui métodos para realizar os cálculos
+ referentes ao tempo na etapa de revestimento e cimenta o poço.
+\end_layout
+
+\begin_layout Itemize
+Classe CGrafico: classe responsável por organizar os dados que serão utilizados
+ para gerar o gráfico junto à Classe CGnuplot.
+\end_layout
+
+\begin_layout Section
+Diagrama de sequência -- eventos
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Eventos
+\end_layout
+
+\end_inset
+
+ e mensagens
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Mensagens
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de sequência
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:diagrama de sequência"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\emph on
+Nesta seção é apresentado o diagrama de sequência (Figura 
+\shape default
+\emph default
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-seqüência."
+
+\end_inset
+
+), observe que o diagrama mostra a troca de eventos, respeitando sua ordem
+ temporal, onde o usuário fornece os dados para a classe COperacao (evento
+ 1), esta fornece informações para a classe CPoco (evento 2).
+ A classe CPoco passa informações para as classes CPerfuracao e CRevestimento
+ eventos (3 e 5), que retornam informações para CPoco (eventos 4 e 6).
+ No evento 7 a classe COperacao tem um retorno de informações de CPoco e,
+ em seguida, envia informações para a classe CGrafico (evento 8).
+ Esta troca informações com a classe CGnuplot (eventos 9 e 10) e retorna
+ os dados para COperacao (evento 11).
+ Por último, no evento 12, COperacao retorna as informações para o usuário.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Diagrama_Sequencia.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de seqüência.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-seqüência."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de comunicação
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+comunicação
+\end_layout
+
+\end_inset
+
+ -- colaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+colaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Diagrama-de-Comunicação"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de colaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "par:Diagrama-de-colaboração:"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Nesta seção é apresentado o diagrama de comunicação, confrme mostra a Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Diagrama-de-Comunicação"
+
+\end_inset
+
+.
+ Observe que inicialmente o usuário entra com os dados, que são armazenados
+ na classe COperacao.
+ Esta classe, por sua vez, fornece informações para a classe CPoco, que
+ então, realiza cálculos e troca informações com as classes CPerfuracao
+ e CRevestimento, que realizam seus respectivos cálculos e retornam os resultado
+s para a classe CPoco.
+ Esta retorna informações para COperacao.
+ A classe COperacao envia os dados para CGrafico, que troca informações
+ com CGnuplot e retornam dados para COperacao.
+ Por fim, COperacao apresenta os resultados ao usuário.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Diagrama-de-Comunicação"
+
+\end_inset
+
+ o diagrama de comunicação.
+ Observe que inicialmente o usuário entra com os dados, o simulador fornece
+ os dados para a classe propriedades do sistema que por sua vez retorna
+ dados para a proria classe propriedades do sistema dependendo de que tipo
+ de regime que se trata.
+ Nesse momento a classe correspondente a propriedades do sistema retornada
+ dados ao simulador.
+ O simulador faz os cálculos e iterações necessárias, gera o arquivo de
+ saida e opcionalmente o gráfico que o usuário quiser plotar.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Diagrama_Comunicacao.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de comunicação.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-comunicação"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de máquina de estado
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+máquina de estado
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Diagrama-de-Maquina-Estado"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-maquina-estado"
+
+\end_inset
+
+ é apresentado o diagrama de máquina de estado para a classe CPerfuracao.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Diagrama_Maquina_Estado.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Máquina de Estado para a classe CPerfuracao.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-maquina-estado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,378 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Documentação 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{APOSTILA DE USO DO PROGRAMA PROJETO DE POÇO - Disciplina PROGRAMAÇÃO
+ PRÁTICA
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A presente documentação refere-se ao uso do Programa "Projeto de Poço".
+ Esta documentação tem o formato de uma apostila que explica passo a passo
+ como usar o programa.
+\end_layout
+
+\begin_layout Section
+Manual do Usuário
+\end_layout
+
+\begin_layout Standard
+Neste manual serão abordados os pontos principais do uso do programa, mostrando
+ a instalação, execução e a opção de salvar os dados em disco.
+ 
+\end_layout
+
+\begin_layout Standard
+Para usar o programa, primeiramente é preciso executá-lo.
+ Na plataforma GNU/Linux, o procedimento deve ser feito usando o seguite
+ comando no terminal, estando no diretório do arquivo executável do programa.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+./a.out
+\end_layout
+
+\begin_layout Standard
+Após ser executado, a tela inicial do programa se mostrará como na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tela-inicial-do-programa"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Tela_Inicial.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela inicial do Programa.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tela-inicial-do-programa"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como podemos ver na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tela-inicial-do-programa"
+
+\end_inset
+
+, o usuário deverá inserir as profundidades para cada fase, iniciando pela
+ profundidade da lâmina de água.
+ Após inserir as profundidades, serão apresentados na tela os resultados
+ e uma mensagem, na qual o usuário poderá optar entre salvar os resultados
+ em um arquivo de texto ou não, conforme mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Escolhendo-salvar-dados-em-disco"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Salvar_Arquivo.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Escolhendo salvar resultados em arquivo de texto.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Escolhendo-salvar-dados-em-disco"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caso o usuário opte por salvar os resultados, uma nova mensagem será apresentada
+, onde o usuário deverá definir um nome para o arquivo a ser salvo.
+ Após a finalização do programa, o arquivo estará armazenado na mesma pasta
+ do executável.
+\end_layout
+
+\begin_layout Standard
+No caso de o usuário optar por não salvar os resultados, o programa passa
+ para a etapa seguinte, onde é apresentada a opção de gerar um gráfico do
+ tempo da operação 
+\emph on
+versus
+\emph default
+ profundidade atingida.
+ Essa opção é apresentada na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Não-salvar-resultados"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Gerando_grafico.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Opção de gerar um gráfico de tempo 
+\emph on
+versus
+\emph default
+ profundidade.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Não-salvar-resultados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Arquivo-texto-com-resultados"
+
+\end_inset
+
+ mostra um exemplo do arquivo de texto com os resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Arquivo_txt.bmp
+	lyxscale 55
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Arquivo gerado pelo programa.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Arquivo-texto-com-resultados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,30 @@
+% This file was created with JabRef 2.7.2.
+% Encoding: Cp1252
+
+@BOOK{medeiros2002petroguia,
+  title = {Petroguia: Engenharia de Poço},
+  publisher = {Synergia},
+  year = {2002},
+  author = {Medeiros, F.A.S. et all},
+  owner = {Lucas},
+  timestamp = {2015.12.17}
+}
+
+@ARTICLE{rocha2007projetos,
+  author = {ROCHA, Luiz Alberto Santos and Azevedo, Cecília Toledo de},
+  title = {Projetos de Poços de Petróleo--geopressões e assentamento de colunas
+	de revestimentos},
+  journal = {Editora Interciência: PETROBRAS, Rio de Janeiro},
+  year = {2007}
+}
+
+@comment{jabref-meta: selector_keywords:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_review:}
+

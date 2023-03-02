@@ -1,0 +1,596 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement ph
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Especificação} 
+\backslash
+rhead{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Especificação
+\end_layout
+
+\begin_layout Standard
+Apresenta-se neste capítulo a concepção, a especificação do sistema a ser
+ modelado e desenvolvido.
+\end_layout
+
+\begin_layout Section
+Especificação do software - descrição dos requisitos
+\end_layout
+
+\begin_layout Standard
+Nesta seção será apresentada a especificação do software.
+\end_layout
+
+\begin_layout Subsection
+Nome do sistema e componentes
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir, na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Nome-do-sistema"
+
+\end_inset
+
+, o nome do software, seus componentes principais e sua missão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Software de Perfuração de Poços de Petróleo.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Componentes principais
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sistema para cálculo de dimensões físicas de uma operação de Perfuração
+ de Poços de Petróleo.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Missão
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Calcular volumes de fluido de perfuração e cimento, a quantidade de equipamentos
+ utilizados e o tempo gasto na perfuração do poço.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Nome do sistema e componentes.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Nome-do-sistema"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Especificação
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir a especificação do software.
+\end_layout
+
+\begin_layout Standard
+O software a ser desenvolvido deverá realizar os cálculos de volume de fluido
+ de perfuração, volume de cimento e quantidades de equipamentos (tubos)
+ utilizados na perfuração de um poço de petróleo, além do tempo gasto em
+ toda a operação.
+ O programa será desenvolvido em linguagem C++, com orientação a objeto,
+ e poderá ser usado nos sistemas operacionais GNU/Linux e Windows, sendo
+ operado em modo texto e terá apenas uma janela.
+ O usuário do software informará as profundidades da lâmina d’água e das
+ sapatas dos revestimentos manualmente.
+ Após a realização dos cálculos e apresentação dos resultados na tela, será
+ oferecida ao usuário a opção de salvar em um arquivo de texto onde serão
+ apresentados os resultados para cada etapa e para toda a operação.
+ Outra opção oferecida será gerar um gráfico de tempo da operação 
+\emph on
+versus
+\emph default
+ profundidade, optando por gerar uma imagem ou um arquivo de texto com os
+ conjuntos de dados.
+\end_layout
+
+\begin_layout Subsection
+Requisitos funcionais
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir os requisitos funcionais.
+\end_layout
+
+\begin_layout Itemize
+RF-01: O usuário deve ser capaz de inserir os valores de profundidade.
+\end_layout
+
+\begin_layout Itemize
+RF-02: O usuário deverá ter liberdade para escolher salvar os resultados.
+\end_layout
+
+\begin_layout Itemize
+RF-03: O usuário poderá plotar seus resultados em um gráfico.
+ O gráfico poderá ser salvo como imagem e ter seus dados exportados como
+ texto.
+\end_layout
+
+\begin_layout Subsection
+Requisitos não funcionais
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir os requisitos não funcionais.
+\end_layout
+
+\begin_layout Itemize
+RNF-01: Os cálculos devem ser feitos utilizando-se de fórmulas geométricas.
+\end_layout
+
+\begin_layout Itemize
+RNF-02: O programa deverá ser multi-plataforma, podendo ser executado em
+ Windows, GNU/Linux ou Mac.
+\end_layout
+
+\begin_layout Section
+Casos de uso
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Casos de uso
+\end_layout
+
+\end_inset
+
+ do Programa
+\end_layout
+
+\begin_layout Standard
+A Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Caso de uso do Programa"
+
+\end_inset
+
+ mostra um cenário de funcionamento do programa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Caso de Uso
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Caso de uso do Programa"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="block" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome do caso de uso:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salvando resultados.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resumo/descrição:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salvando arquivo de texto com os resultados obtidos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Etapas: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Inserir valores das profundidades.
+\end_layout
+
+\begin_layout Enumerate
+Salvar os resultados.
+\end_layout
+
+\begin_layout Enumerate
+Analisar os resultados.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cenários alternativos:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inserir valores negativos ou incompatíveis com a ordem de grandeza do problema
+ real.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de caso de uso geral do programa
+\end_layout
+
+\begin_layout Standard
+O diagrama de caso de uso da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-caso-geral"
+
+\end_inset
+
+ mostra o usuário utilizando o sistema, onde ele insere as profundidades,
+ salva os resultados e analisa os mesmos.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Caso_de_Uso_Geral.jpg
+	lyxscale 90
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de caso de uso geral
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-caso-geral"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de caso de uso específico do programa
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Caso-de-especifico"
+
+\end_inset
+
+ representa o caso de uso específico onde o usuário decide gerar o gráfico,
+ salvando a imagem e o arquivo de texto contendo as informações do gráfico.
+ Primeiramente as profundidades são inseridas manualmente, a opção de salvar
+ os dados e o gráfico é escolhida e o usuário pode analisar os resultados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Caso_de_Uso_Especifico.jpg
+	lyxscale 80
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de caso uso específico
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Caso-de-especifico"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

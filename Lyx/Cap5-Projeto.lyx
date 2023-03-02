@@ -1,0 +1,540 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Projeto 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Projeto-do-Sistema"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+deixar apenas o que for pertinente ao módulo experimental a ser desenvolvido.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Projeto} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo do projeto de engenharia veremos questões associadas ao projeto
+ do sistema.
+\end_layout
+
+\begin_layout Section
+Projeto do sistema
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Projeto do sistema
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Projeto-do-sistema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depois da análise orientada a objeto desenvolve-se o projeto do sistema,
+ o qual envolve etapas como a definição dos protocolos, da interface API,
+ o uso de recursos, a subdivisão do sistema em subsistemas, a alocação dos
+ subsistemas ao hardware e a seleção das estruturas de controle, a seleção
+ das plataformas do sistema, das biblitoecas externas, dos padrões de projeto,
+ além da tomada de decisões conceituais e políticas que formam a infraestrutura
+ do projeto.
+\end_layout
+
+\begin_layout Standard
+Deve-se definir padrões de documentação, padrões para o nome das classes,
+ padrões de retorno e de parâmetros em métodos, características da interface
+ do usuário e características de desempenho.
+\end_layout
+
+\begin_layout Standard
+O projeto do sistema é a estratégia de alto nível para resolver o problema
+ e elaborar uma solução.
+ Você deve se preocupar com itens como:
+\end_layout
+
+\begin_layout Enumerate
+Plataformas
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Plataformas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O software irá funcionar nos sistemas operacionais Windows e GNU/Linux,
+ sendo desenvolvido no Windows e testado no Windows e GNU/Linux.
+\end_layout
+
+\begin_layout Itemize
+Não hávera necessidade de grandes mudanças para tornar o programa multiplataform
+a pois a linguagem utilizada, C++, tem suporte em todos estes sistemas operacion
+ais.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Bibliotecas
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Bibliotecas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Será utilizada biblioteca padrão da linguagem C++.
+\end_layout
+
+\begin_layout Itemize
+O programa será desenvolvido com a interface Dev-C++ 5.6.3.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ambiente de desenvolvimento
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Ambiente de desenvolvimento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O programa será desenvolvido e testado em um notebook 
+\emph on
+Gateway
+\emph default
+ com Windows 10 64-bit, processador Intel core i3-3110M, 4GB de memória
+ RAM e placa de video intel HD Graphics 4000.
+\end_layout
+
+\begin_layout Itemize
+O software é executado em uma janela do terminal (linux ou windows).
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Janela-de-execução-programa"
+
+\end_inset
+
+ mostra o programa sendo executado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Execucao_Programa.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Janela de execução do Programa de Poço
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Janela-de-execução-programa"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Projeto orientado a objeto -- POO
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+POO
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Projeto orientado a objeto
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Projeto-orientado-a-objeto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Efeitos do projeto no modelo
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+modelo
+\end_layout
+
+\end_inset
+
+ estrutural
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Efeito-do-projeto-no-modelo-estrutural"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aqui são estabelecidos as dependencias e restrições do Programa de Poço.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O Software necessita das plataformas GNU/linux ou Windows para ser executado.
+\end_layout
+
+\begin_layout Itemize
+No Sistema Operacional Windows, existe a necessidade de instalação do 
+\emph on
+software
+\emph default
+ Gnuplot para o funcionamento do programa.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Efeitos do projeto nos métodos
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+métodos
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Efeitos do projeto nos métodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Inicialmente seria plotado um gráfico ilustrando o poço, respeitando as
+ suas proporções, usando a classe CGnuplot, porém esta etapa foi revisada,
+ devido às dimensões de um poço, onde existem diferenças consideráveis entre
+ uma fase e outra, o que deixaria a ilustração ruim.
+ A ilustração foi então substituída por outra que representa um esquema
+ pré-definido de um poço e o gráfico gerado pela classe CGnuplot passou
+ a ser o de tempo v
+\emph on
+ersus
+\emph default
+ profundidade.
+ Este gráfico representa o avanço da profundidade atingida conforme passa
+ o tempo da operação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Na classe CSimulador foi necessário tirar um função que exsitia no método
+ simular() para entrada de dados.
+ Foi criado um novo método chamado entrada() que se refere a entrada de
+ dados.
+\end_layout
+
+\begin_layout Plain Layout
+Também, ao escolher o sistema operacional GNU/Linux para servir de sistema
+ para a execução do simulador, foi necessário mudar a maneira que os gráficos
+ seriam plotados, inicialmente seriam plotados usando a classe CGnuplot,
+ porém esta não surtiu efeito, então optou-se por utilizar o recurso do
+ script no linux, onde o programa cria um script e o executa para que o
+ gráfico seja plotado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Efeitos do projeto nas heranças
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+heranças
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Efeitos do projeto nas heranças
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Heranças
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Não houve necessidade de rever o projeto nesta etapa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O projeto não interferiu nas classes herdeiras, desde o inicio da elaboração
+ do projeto convencionou-se que seria necessário uma classe regime e que
+ teria como classes herdeiras as classes correspondentes aos regimes que
+ posteriormente na criação de um método utilizou-se polimorfismo para o
+ cálculo de umas propriedades.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Efeitos do projeto nas associações
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Efeitos do projeto nas associações
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Associações
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Não houve necessidade de rever o projeto nesta etapa.
+\end_layout
+
+\begin_layout Subsubsection
+Efeitos do projeto nas otimizações
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+otimizações
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Foi incluído um novo tipo de gráfico representando os dados referentes aos
+ dados calculados.
+\end_layout
+
+\end_body
+\end_document

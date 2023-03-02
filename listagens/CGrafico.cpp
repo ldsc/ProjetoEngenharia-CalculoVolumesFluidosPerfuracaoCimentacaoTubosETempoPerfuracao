@@ -1,0 +1,1 @@
+#include "CGrafico.h"

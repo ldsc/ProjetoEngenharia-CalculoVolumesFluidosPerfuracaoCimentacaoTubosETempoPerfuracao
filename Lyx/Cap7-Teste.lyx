@@ -1,0 +1,775 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Teste
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Teste} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo serão apresentados alguns testes do programa Projeto de Poço,
+ a fim de orientar o usuário na útilização do software em questão.
+\end_layout
+
+\begin_layout Section
+Teste 1: Entrando com valores comuns ao problema, observando os resultados
+ em tela e salvando arquivo
+\end_layout
+
+\begin_layout Standard
+Neste teste estamos apresentando como utilizar o programa e apresentaremos
+ também as opções que ele oferece de saida de dados.
+\end_layout
+
+\begin_layout Standard
+Primeiramente, será apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Inserindo-profundidades"
+
+\end_inset
+
+, como inserir as profundidades das fases do poço.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Execucao_Programa.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Entrada de dados.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Inserindo-profundidades"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+Nas Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultados"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultados-1"
+
+\end_inset
+
+ pode ser visto a apresentação dos resultados em tela, onde o usuário pode
+ vizualizar os resultados sem precisar salvá-los.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Apresentacao_Resultados.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Resultados em tela.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Apresentacao_Resultados2.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Resultados em tela.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultados-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A seguir, é apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Salvando-arquivo-disco"
+
+\end_inset
+
+ um exemplo de salvamento dos resultados em arquivo de disco.
+ Primeiramente escolhe-se a opção de salvar resultados em disco e em seguida
+ define-se um nome para o arquivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Salvar_Arquivo.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Salvando arquivo de disco.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Salvando-arquivo-disco"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em seguida, é oferecida ao usuário a opção de gerar um gráfico de tempo
+ 
+\emph on
+versus
+\emph default
+ profundidade, conforme mostra a Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gerando-grafico"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Gerando_grafico.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Escolhendo gerar gráfico.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gerando-grafico"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gráfico"
+
+\end_inset
+
+ mostra um exemplo de gráfico gerado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Grafico.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Gráfico do tempo
+\emph on
+ versus
+\emph default
+ profundidade gerado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gráfico"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 2: Testando valores de profundidade errados
+\end_layout
+
+\begin_layout Standard
+Primeiramente será apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Entrada-ruim"
+
+\end_inset
+
+ a entrada com os dados errados.
+ O programa trabalha com valores de profundidade medida e não com as diferenças
+ entre fases, e por isso a profundidade da fase seguinte deve sempre ser
+ maior que a da fase anterior.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Entrada_Dados_Ruim.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Entrada de dados errados.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Entrada-ruim"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os resultados são apresentados nas Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultados-errados"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultados-errados-1"
+
+\end_inset
+
+.
+ Como pode ser observado, quando o usuário fornece profundidades irreais
+ das fases do poço, como uma fase com profundidade menor ou igual à fase
+ anterior, as respostas obtidas também não são realistas, apresentando valores
+ negativos ou nulos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Entrada_Dados_Ruim2.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Resultados da entrada errada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultados-errados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Entrada_Dados_Ruim3.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Resultados da entrada errada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultados-errados-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 3: Testando valores de profundidade que não representam o problema
+ real
+\end_layout
+
+\begin_layout Standard
+Na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Entrada-nao-real"
+
+\end_inset
+
+ temos os dados de entrada que não representam as dimensões de um poço real.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Entrada_nao_real.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Entrada de dados que não correspondem ao problema real.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Entrada-nao-real"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nos resultados apresentados nas Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultados-nao-reais"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultados-nao-reais-1"
+
+\end_inset
+
+ podemos ver que os cálculos realizados pelo programa não são consistentes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Entrada_nao_real2.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Resultados da entrada não real.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultados-nao-reais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Entrada_nao_real3.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Resultados da entrada não real.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultados-nao-reais-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

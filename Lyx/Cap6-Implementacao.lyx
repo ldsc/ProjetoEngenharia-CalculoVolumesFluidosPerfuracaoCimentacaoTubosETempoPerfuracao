@@ -1,0 +1,730 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Implementação
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Implementação"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Implementação} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo será apresentado o código fonte do Programa 
+\begin_inset Quotes eld
+\end_inset
+
+Projeto de Poço
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Código fonte
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Codigo-fonte"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Implementação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir um conjunto de classes (arquivos .h e .cpp) além do
+ arquivo main.
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{COperacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\emph on
+COperacao.h
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe COperacao.h}, label={COp
+eracao-h},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/COperacao.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{COperacao-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\emph on
+COperacao.cpp
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe COperacao.cpp},
+ label={COperacao-cpp},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/COperacao.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CPoco-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\emph on
+CPoco.h
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CPoco.h}, label={CPoco-h
+},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CPoco.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CPoco-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\emph on
+CPoco.cpp
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CPoco.cpp}, label={CPoco
+-cpp},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CPoco.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CPerfuracao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\emph on
+CPerfuracao.h
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CPerfuracao.h},
+ label={CPerfuracao-h},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CPerfuracao.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CPerfuracao-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\emph on
+CPerfuracao.cpp
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CPerfuracao.cpp},
+ label={CPerfuracao-cpp},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CPerfuracao.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CRevestimento-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\emph on
+CRevestimento.h
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CRevestimento.h},
+ label={CRevestimento-h},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CRevestimento.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CRevestimento-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\emph on
+CRevestimento.cpp
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CRevestimento.cpp},
+ label={CRevestimento-cpp},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CRevestimento.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CGrafico-h}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\emph on
+C
+\emph default
+Grafico.h.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CGrafico.h}, label={CGra
+fico-h},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CGrafico.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CGrafico-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\emph on
+CGrafico.cpp
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CGrafico.cpp}, label={CG
+rafico-cpp},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/CGrafico.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{main.cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da função 
+\emph on
+main.cpp
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++, frame=single} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da função main.cpp}, label={ma
+in-cpp},keywordstyle=
+\backslash
+color{blue},stringstyle=
+\backslash
+color{green},commentstyle=
+\backslash
+color{red},extendedchars=true,showspaces=false,showstringspaces=false,breaklines
+=true,breakautoindent=true,captionpos=b,xleftmargin=0pt,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/main.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

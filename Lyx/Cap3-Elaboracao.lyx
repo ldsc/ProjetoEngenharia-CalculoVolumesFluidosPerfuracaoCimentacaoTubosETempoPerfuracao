@@ -1,0 +1,1997 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Elaboração} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo será apresentada a elaboração do projeto.
+\end_layout
+
+\begin_layout Section
+Análise de domínio
+\end_layout
+
+\begin_layout Itemize
+O 
+\emph on
+software
+\emph default
+ envolverá disciplinas de Geometria, Matemática, Física e Engenharia de
+ Poço.
+ 
+\end_layout
+
+\begin_layout Itemize
+O programa será desenvolvido em ambiente universitário, contará com ajuda
+ de professores e engenheiros da indústria.
+\end_layout
+
+\begin_layout Itemize
+O 
+\emph on
+software
+\emph default
+ se baseará em métodos determinísticos para os cálculos e, na maioria das
+ vezes, estará levemente otimista em relação aos valores reais por conta
+ de acidentes e imprevistos decorrentes da operação no campo.
+\end_layout
+
+\begin_layout Section
+Formulação teórica
+\end_layout
+
+\begin_layout Standard
+Aqui serão apresentadas as fórmulas e medidas utilizadas para a realização
+ dos cálculos no 
+\emph on
+software
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+A base de todo o programa envolve cálculos de volume.
+ Volume é uma medida das três dimensões de um corpo.
+ Para este cálculo usamos cilindros e profundidades.
+\end_layout
+
+\begin_layout Itemize
+O conceito de capacidade é usado nos cálculos.
+ Capacidade é uma relação entre volume e comprimento.
+ No projeto utilizamos a unidade de bbl/m (barril/metro).
+\end_layout
+
+\begin_layout Itemize
+O último parâmetro físico a ser calculado é o tempo.
+ Seus cálculos são baseados em taxas de velocidade e vazão e outras operações
+ que possuem durações fixas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um poço é dividido em fases, e cada fase é determinada pelo diâmetro da
+ broca utilizada na perfuração.
+ No 
+\emph on
+software
+\emph default
+ foi utilizada a configuração típica de um poço de petróleo, composto pelas
+ fases com diâmetros de 36
+\begin_inset Quotes erd
+\end_inset
+
+, 26
+\begin_inset Quotes erd
+\end_inset
+
+, 17 1/2
+\begin_inset Quotes erd
+\end_inset
+
+, 12 1/4
+\begin_inset Quotes erd
+\end_inset
+
+ e 8 1/2
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Após a finalização de cada fase, é descida uma coluna de revestimento para
+ proteger as formações e permitir a utilização de um fluido de perfuração
+ mais adequado à fase seguinte a ser perfurada.
+ As medidas das tubulações e brocas utilizadas na operação são apresentadas
+ na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Medida-padrão"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rocha2007projetos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diâmetro (polegadas)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comprimento (metros)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Riser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Revestimento fase 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Revestimento fase 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Revestimento fase 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13 3/8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Revestimento fase 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9 5/8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Revestimento fase 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Broca fase 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Broca fase 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Broca fase 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17 1/2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Broca fase 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12 1/4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Broca fase 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 1/2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Medida padrão de tubulações e brocas.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Medida-padrão"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um dos cálculos realizados pelo 
+\emph on
+software
+\emph default
+ tem como resultado a quantidade de revestimentos necessários para cada
+ fase e para o riser.
+ Para o cálculo foi utilizado o comprimento dos tubos, conforme mostra a
+ Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:numero-revestimentos"
+
+\end_inset
+
+ (revestimentos das fase 1, 2, 3 e 4), a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:numero-revestimento-fase5"
+
+\end_inset
+
+ (
+\emph on
+liner
+\emph default
+, revestimento da fase 5) e a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:numero-riser"
+
+\end_inset
+
+ (
+\emph on
+riser
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N^{o}tubos_{revestimento}=\frac{profundidade\left[n\right]-profundidade\left[0\right]}{12},\label{eq:numero-revestimentos}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N^{o}tubos_{liner}=\frac{profundidade\left[5\right]-profundidade\left[4\right]+100}{12},\label{eq:numero-revestimento-fase5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N^{o}tubos_{riser}=\frac{profundidade\left[0\right]}{15}.\label{eq:numero-riser}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O valor entre 
+\emph on
+colchetes
+\emph default
+ representa a fase do poço.
+ A profundidade[0] representa a lâmina d'água (LDA).
+ Na fase 5, é instalado o liner de 7
+\begin_inset Quotes erd
+\end_inset
+
+, sendo necessário exceder 100m acima da sapata da fase anterior.
+\end_layout
+
+\begin_layout Standard
+Para o cálculo dos volumes de fluido de perfuração e cimento, foi utilizado
+ o conceito de 
+\emph on
+Capacidade
+\emph default
+, que é uma relação entre volume e comprimento.
+ A Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:capacidade"
+
+\end_inset
+
+ mostra como são calculadas as 
+\emph on
+Capacidades 
+\emph default
+(
+\emph on
+bbl/m
+\emph default
+) da broca, revestimento e do tubo de perfuração, sendo 
+\emph on
+D
+\emph default
+ o diâmetro dos mesmos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Capacidade=0,0031871\times D^{2}.\label{eq:capacidade}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Com isso, o volume de fluido de perfuração que será utilizado é calculado
+ a partir da Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volume-fluido"
+
+\end_inset
+
+.
+ Lembrando que nas fases 1 e 2, o fluido de perfuração utilizado é a água
+ do mar, portanto, estes valores não foram considerados no cálculo do programa,
+ visto que o programa visa estimar os volumes de fluidos com necessidade
+ de preparação e estocagem na planta da sonda.
+ Na fórmula é utilizado um fator de multiplicação 1,1.
+ Esse fator é referente à margem de segurança de 10% utilizada pela indústria
+ petrolífera.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{fluido}\left[n\right]=1,1\times[\left(prof\left[n\right]-prof\left[n-1\right]+10\right)\times capacidade_{broca}\left[n\right]+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+...+\left(prof\left[n-1\right]-LDA\right)\times capacidade_{revest}\left[n-1\right]+LDA\times capacidade_{riser}].\label{eq:volume-fluido}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O volume de cimento utilizado é calculado a partir da Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volume-cimento-12"
+
+\end_inset
+
+, para as fases 1 e 2.
+ É utilizado o fator de multiplicação 2 para garantir a qualidade do cimento
+ no contato revestimento-formação.
+ Esse cimento tem retorno ao meio marítimo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{cimento}\left[n\right]=2\times\left[\left(prof\left[n\right]-LDA\right)\times\left(capacidade_{broca}\left[n\right]-capacidade_{revest}\left[n\right]\right)\right],\label{eq:volume-cimento-12}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e, para as fases 3 e 4, utiliza-se a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volume-cimento-34"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+V_{cimento}\left[n\right]=\left(prof\left[n\right]-prof\left[n-1\right]-100\right)\times...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+...\times\left(capacidade_{broca}\left[n\right]-capacidade_{revest}\left[n\right]\right),\label{eq:volume-cimento-34}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e, na fase 5, utiliza-se a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volume-cimento-5"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+V_{cimento}\left[5\right]=\left(prof\left[5\right]-prof\left[4\right]\right)\times\left(capacidade_{broca}\left[5\right]-capacidade_{revest}\left[5\right]\right)+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+...+100\times\left(capacidade_{revest}\left[4\right]-capacidade_{revest}\left[5\right]\right)+60\times capacidade_{revest}\left[4\right].\label{eq:volume-cimento-5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Além dos cálculos apresentados anteriormente, o 
+\emph on
+software
+\emph default
+ também estima o tempo de duração de toda a operação de perfuração, incluindo
+ o tempo para perfurar a formação rochosa, revestir, cimentar, manobras
+ com BOP (
+\emph on
+blow out preventer
+\emph default
+), entre outros.
+ Na operação, alguns tempos são fixos, como o tempo para montar e desmontar
+ o BHA (
+\emph on
+Bottom Hole Assembly
+\emph default
+), circular o fluido de perfuração para limpeza do poço e esperar a 
+\emph on
+pega
+\emph default
+ do cimento, enquanto que o restante dos tempos são calculados baseados
+ em equações que envolvem algumas taxas como a velocidade de perfuração,
+ descida e subida do BHA, montagem e descida de revestimento, bombeio do
+ cimento, entre outras.
+ Os valores dos tempos fixos são apresentados na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Tempos-fixos"
+
+\end_inset
+
+ e as taxas utilizadas na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Taxas-tempo"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Procedimento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tempo (horas)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Montar BHA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desmontar BHA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Circular fluido para limpeza
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Esperar pega do cimento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tempos fixos de operações.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tempos-fixos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="17" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Procedimento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Taxa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unidade
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descer/Subir BHA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+166,667
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Perfurar (fases 1 e 2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Perfurar (fases 3 e 4)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Perfurar (fase 5)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Montar revestimento (fase 1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+junta/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Montar revestimento (fase 2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+junta/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Montar revestimento (fase 3)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+junta/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Montar revestimento (fase 4)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+junta/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Montar revestimento (fase 5)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+junta/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descer Revestimento (trecho de poço aberto)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+240
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descer Revestimento (trecho de poço revestido)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+360
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Descer Revestimento (trecho com 
+\emph on
+Riser
+\emph default
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+720
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bombear cimento
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+600
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+barril/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Subir 
+\emph on
+drill pipe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+166,667
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Instalação do BOP e 
+\emph on
+Riser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20,833
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Retirada do BOP e 
+\emph on
+Riser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31,25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+metro/hora
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Taxas utilizadas para cálculo dos tempos da operação.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Taxas-tempo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esses valores são utilizados junto com as profundades das fases e da lâmina
+ d'água para calcular o tempo gasto na operação.
+ Os cálculos são divididos entre as etapas de perfuração, de revestimento
+ e a descida/subida do BOP e Riser.
+ A Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Tempo-perfuracao"
+
+\end_inset
+
+ apresenta o cálculo do tempo gasto durante a perfuração do poço.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Tempo_{Perfuracao}\left[n\right]=montarBHA+\frac{prof\left[n-1\right]}{descerBHA}+\frac{prof\left[n\right]-prof\left[n-1\right]}{taxaPerfuracao\left[n\right]}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+...+\frac{prof\left[n\right]}{subirBHA}+circularFluido+desmontarBHA.\label{eq:Tempo-perfuracao}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para a etapa de instalação do revestimento, os cálculos são dividos em três
+ grupos, fases 1 e 2, 3 e 4, e por último a fase 5.
+ A Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Tempo-revestimento"
+
+\end_inset
+
+ apresenta o cálculo para a instalação do revestimento nas duas primeiras
+ fases.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Tempo_{Revestimento}\left[n\right]=\frac{n^{o}tubos\left[n\right]}{montarRevest\left[n\right]}+\frac{LDA-\left(prof\left[n\right]-LDA\right)}{descerRevest_{\left(pocoAberto\right)}}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+...+\frac{\left(prof\left[n\right]-50\right)\times capacidade_{DrillPipe}+50\times capacidade_{Revest}\left[n\right]+volume_{Cimento}\left[n\right]}{taxaBombeioCimento}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+...+esperarPega+\frac{prof\left[n\right]-50}{subirDrillPipe}.\label{eq:Tempo-revestimento}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Tempo-revestimento-fases34"
+
+\end_inset
+
+ apresenta o cálculo para as fases 3 e 4.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Tempo_{Revestimento}\left[n\right]=\frac{n^{o}tubos\left[n\right]}{montarRevest\left[n\right]}+\frac{prof\left[n-1\right]-\left(prof\left[n\right]-LDA\right)}{descerRevest_{\left(pocoRevestido\right)}}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+...+\frac{prof\left[n\right]-prof\left[n-1\right]}{descerRevest_{\left(pocoAberto\right)}}+\frac{LDA\times capacidade_{Revest}\left[30\right]}{taxaBombeioCimento}+esperarPega+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+...+\frac{\left(prof\left[n\right]-LDA\right)\times capacidade_{Revest}\left[n\right]+volume_{Cimento}\left[n\right]}{taxaBombeioCimento}+\frac{LDA}{subirDrillPipe}.\label{eq:Tempo-revestimento-fases34}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para a fase 5, é utilizada a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Tempo-revestimento-fase5"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Tempo_{Revestimento}\left[5\right]=\frac{n^{o}\, tubos\left[5\right]}{montarRevest\left[5\right]}+\frac{LDA-\left(prof\left[5\right]-prof\left[4\right]+100\right)}{descerRiser}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+...+\frac{\left(prof\left[5\right]-prof\left[4\right]+100\right)\times capacidade_{Revest}\left[4\right]+volume_{Cimento}\left[5\right]}{taxaBombeioCimento}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+...+\frac{\left(prof\left[4\right]-100\right)\times capacidade_{DrillPipe}}{taxaBombeioCimento}+\frac{prof\left[4\right]-\left(prof\left[5\right]-prof\left[4\right]-100\right)-LDA}{descerRevest_{\left(pocoRevestido\right)}}+...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+...+\frac{prof\left[5\right]-prof\left[4\right]-100}{descerRevest_{\left(pocoAberto\right)}}+esperarPega+\frac{prof\left[4\right]-100}{subirDrillPipe}.\label{eq:Tempo-revestimento-fase5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Com os tempos calculados, o tempo total da operação pode ser obtido, somando-se
+ o tempo de todas as etapas e os tempos de instalação e retirada do BOP
+ e 
+\emph on
+Riser
+\emph default
+.
+ Estas são calculadas através das Equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:tempo-instalacao-bop"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:tempo-retirada-bop"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Tempo\, instalacao_{BOP-Riser}=\frac{prof\left[0\right]}{descida_{BOP}},\label{eq:tempo-instalacao-bop}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Tempo\, retirada_{BOP-Riser}=\frac{prof\left[0\right]}{subida_{BOP}}.\label{eq:tempo-retirada-bop}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Identificação de pacotes -- assuntos
+\end_layout
+
+\begin_layout Itemize
+Poço: O poço é uma via física de ligação entre a superfície e um alvo geológico.
+ Sua construção se dá a partir da perfuração de rochas em subsuperfície.
+\end_layout
+
+\begin_layout Itemize
+Perfuração: A perfuração consiste no conjunto de várias operações e atividades
+ necessárias para atravessar as formações geológicas que formam a porção
+ superficial da crosta terrestre até atingir-se o alvo geológico.
+ Nas atividades de perfuração de poços de petróleo utiliza-se sondas de
+ perfuração, que consistem em conjuntos de equipamentos bastante complexos
+ e robustos.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Coluna de Perfuração: Para realizar a perfuração utiliza-se um conjunto
+ de ferramentas, dentre elas a coluna de perfuração.
+ Essa coluna é formada por duas partes, o 
+\emph on
+BHA
+\emph default
+ e os 
+\emph on
+drill pipes
+\emph default
+.
+ O 
+\emph on
+BHA
+\emph default
+ (
+\emph on
+Bottom Hole Assembly
+\emph default
+) é um conjunto formado pela broca, estabilizadores, comandos e, dependendo
+ da necessidade, alguns equipamentos mais complexos (ferramentas de perfilagem,
+ medidores de temperatura e pressão, etc).
+ Os 
+\emph on
+drill pipes
+\emph default
+ são tubos de 5 1/2
+\begin_inset Quotes erd
+\end_inset
+
+ utilizados para conectar o 
+\emph on
+BHA
+\emph default
+ à sonda de perfuração.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Geometria: A geometria está relacionada diretamente a todos os parâmetros
+ do poço, que consiste em cilindros concêntricos de diferentes dimensões
+ radiais e longitudinais.
+ A partir das medidas geométricas são calculados os volumes.
+\end_layout
+
+\begin_layout Itemize
+Gráfico: O gráfico é uma representação dos resultados obtidos pelo software,
+ onde duas grandezas, o tempo da operação (horas) e a profundidade alcançada
+ (metros), são plotadas, de maneira que os pontos críticos (de maior duração)
+ fiquem destacados.
+\end_layout
+
+\begin_layout Section
+Diagrama de pacotes -- assuntos
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+ representa o diagrama de pacotes do sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../Imagens/Diagrama_Pacotes.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Pacotes.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

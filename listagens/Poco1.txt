@@ -1,0 +1,83 @@
+
+-------------------------     Resultados     -------------------------
+
+
+Lamina de Agua: 	1000 metros
+
+Profundida da Fase 1: 	1100 metros
+
+Profundida da Fase 2: 	1400 metros
+
+Profundida da Fase 3: 	2000 metros
+
+Profundida da Fase 4: 	2300 metros
+
+Profundida da Fase 5: 	2600 metros
+
+
+
+-------------------------  Tubos Necessarios  -------------------------
+
+
+Tubos de Riser na Lamina de Agua: 			66.6667 tubos
+
+Tubos de Revestimento de 30 polegadas na Fase 1: 	8.33333 tubos
+
+Tubos de Revestimento de 20 polegadas na Fase 2: 	33.3333 tubos
+
+Tubos de Revestimento de 13 3/8 polegadas na Fase 3: 	83.3333 tubos
+
+Tubos de Revestimento de 9 5/8 polegadas na Fase 4: 	108.333 tubos
+
+Tubos de Liner de 7 polegadas na Fase 5: 		33.3333 tubos
+
+
+
+------------------------- Duracao da Operacao -------------------------
+
+
+Duracao da Fase 1: 	68.5783 horas
+
+Duracao da Fase 2: 	93.5657 horas
+
+Descida do BOP: 	48 horas
+
+Duracao da Fase 3: 	194.634 horas
+
+Duracao da Fase 4: 	138.461 horas
+
+Duracao da Fase 5: 	181.386 horas
+
+Subida do BOP: 		32 horas
+
+Tempo total: 		756.626 horas
+
+Tempo total: 		31.5261 dias
+
+
+
+-------------------------       Volumes       -------------------------
+
+
+Fase 1 e 2 utilizam agua do mar como fluido de perfuracao
+
+Volume de fluido de perfuracao usado na Fase 3: 	2481.46 barris
+
+Volume de fluido de perfuracao usado na Fase 4: 	2055.84 barris
+
+Volume de fluido de perfuracao usado na Fase 5: 	1766.33 barris
+
+Volume Total de fluido de perfuracao usado: 		6303.63 barris
+
+
+Volume de cimento usado na Fase 1: 			252.418 barris
+
+Volume de cimento usado na Fase 2: 			703.712 barris
+
+Volume de cimento usado na Fase 3: 			202.954 barris
+
+Volume de cimento usado na Fase 4: 			36.6019 barris
+
+Volume de cimento usado na Fase 5: 			53.854 barris
+
+Volume Total de cimento usado: 				1249.54 barris
